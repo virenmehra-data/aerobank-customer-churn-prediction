@@ -1,5 +1,7 @@
 # AeroBank Customer Churn Prediction
 
+![AeroBank Customer Churn Prediction](aerobank-churn-preview.png)
+
 **Python · Jupyter · Machine Learning · Classification**
 
 ## Project Overview
@@ -112,6 +114,7 @@ The Decision Tree substantially reduced those missed closures while also produci
 ```text
 aerobank-customer-churn-prediction/
 ├── README.md
+├── aerobank-churn-preview.png
 ├── methodology.md
 ├── model_comparison.csv
 └── confusion_matrices.csv
