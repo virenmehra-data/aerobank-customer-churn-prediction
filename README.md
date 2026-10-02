@@ -54,7 +54,17 @@ Class weighting was used to reduce the effect of the imbalance between Active an
 
 A Decision Tree classifier was trained as the second model and evaluated on the same stratified test set.
 
-The retained project outputs include the complete confusion matrix and classification results. The exact Decision Tree constructor parameters were not preserved in the portfolio source material, so they are not reconstructed here.
+The original notebook confirms the model configuration:
+
+```python
+DecisionTreeClassifier(
+    max_depth=5,
+    class_weight='balanced',
+    random_state=42
+)
+```
+
+The depth limit was used to constrain model complexity, while balanced class weights accounted for the smaller Closed-customer class.
 
 ## Model Comparison
 
@@ -115,6 +125,7 @@ The Decision Tree substantially reduced those missed closures while also produci
 aerobank-customer-churn-prediction/
 ├── README.md
 ├── aerobank-churn-preview.png
+├── aerobank_churn_analysis.ipynb
 ├── methodology.md
 ├── model_comparison.csv
 └── confusion_matrices.csv
