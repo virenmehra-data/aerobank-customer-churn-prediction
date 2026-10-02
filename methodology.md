@@ -96,7 +96,17 @@ Selected metrics:
 
 A Decision Tree classifier was trained and evaluated using the same held-out test data.
 
-The original retained outputs contain the model's evaluation results, but the exact constructor parameters were not preserved in the portfolio source material. They are therefore not reconstructed.
+The original notebook confirms the following configuration:
+
+```python
+DecisionTreeClassifier(
+    max_depth=5,
+    class_weight="balanced",
+    random_state=42
+)
+```
+
+The maximum depth limited tree complexity, while balanced class weights accounted for the smaller Closed-customer class.
 
 ### Decision Tree Test Results
 
