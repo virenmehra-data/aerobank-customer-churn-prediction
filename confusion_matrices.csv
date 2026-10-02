@@ -1,0 +1,5 @@
+model,actual,predicted_active,predicted_closed
+Logistic Regression,Active,1251,448
+Logistic Regression,Closed,85,240
+Decision Tree,Active,1526,173
+Decision Tree,Closed,28,297
